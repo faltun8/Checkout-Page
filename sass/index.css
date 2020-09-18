@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: none;
+  font-family: Montserrat-Regular;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "item1 item2" "item1 .";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#item1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: item1;
+}
+
+#item2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: item2;
+}
+
+h1 {
+  text-align: center;
+}
+
+form label, form input, form select, form button {
+  margin: 10px 0px;
+}
+
+form h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+form #email,
+form #phone,
+form #name,
+form #address,
+form #city {
+  min-width: 320px;
+  height: 30px;
+  padding-left: 30px;
+  position: relative;
+  left: -20px;
+}
+
+form i {
+  position: relative;
+  left: 10px;
+  z-index: +1;
+}
+
+form button {
+  float: right;
+  background-color: orange;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+#inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#inner-container i {
+  position: relative;
+  left: 10px;
+}
+
+#inner-container select, #inner-container input {
+  padding-left: 30px;
+  height: 30px;
+  position: relative;
+  left: -20px;
+}
+
+#post-code {
+  width: 170px;
+}
+
+#item2 {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "right-item1 right-item2" "right-item3 right-item4" "right-item5 right-item5";
+  background-color: #ecebeb;
+  border-radius: 20px;
+  padding: 15px;
+  height: auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+#right-item1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: right-item1;
+}
+
+#right-item1 img {
+  height: 7rem;
+  border-radius: 10px;
+}
+
+#right-item2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right-item2;
+}
+
+#right-item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: right-item3;
+}
+
+#right-item3 img {
+  height: 7rem;
+  border-radius: 10px;
+}
+
+#right-item4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: right-item4;
+}
+
+#right-item5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: right-item5;
+  height: auto;
+  padding-top: 10px;
+}
+
+#right-item5 .right {
+  text-align: right;
+}
+
+#right-item5 .left {
+  float: left;
+}
+
+#right-item5 p {
+  margin: 3px 0px;
+}
+
+.quantity {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 6px;
+  border: 1px rgba(167, 164, 164, 0.774) solid;
+  border-radius: 3px;
+  margin-top: 40px;
+}
+
+.quantity button, .quantity p {
+  display: inline;
+  border: none;
+}
+
+.quantity button {
+  background-color: rgba(199, 199, 199, 0.596);
+  width: 20px;
+  height: 20px;
+}
+
+.quantity p {
+  padding: 0px 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: small;
+}
+
+.new-price {
+  color: orange;
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+        grid-template-areas: "item2" "item1";
+  }
+}
+/*# sourceMappingURL=index.css.map */

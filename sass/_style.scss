@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: none;
+    font-family: Montserrat-Regular;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "item1 item2" "item1 .";
+    justify-content: center;
+
+}
+
+#item1 {
+    grid-area: item1;
+    
+}
+
+#item2 {
+    grid-area: item2;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+   
+    label,input,select,button {
+        margin: 10px 0px;
+    }
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #email, 
+    #phone, 
+    #name, 
+    #address,
+    #city {
+        min-width: 320px;
+        height: 30px;
+        padding-left: 30px;
+        position: relative;
+        left: -20px;
+
+        
+    }
+    i {
+        position: relative;
+        left: 10px;
+        z-index: +1;
+    }
+    button {
+        float: right;
+        background-color: orange;
+        border: none;
+        width: 100px;
+        height: 30px;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+#inner-container {
+    display: flex;
+  
+
+    i {
+        position: relative;
+        left: 10px;
+      
+    }
+    select, input {
+        padding-left: 30px;
+        height: 30px;
+        position: relative;
+        left: -20px;
+    }
+}
+
+
+
+#post-code {
+    width: 170px;
+    
+}
+
+#item2 {
+    display: grid;
+    grid-template-areas: "right-item1 right-item2"
+    "right-item3 right-item4"
+    "right-item5 right-item5";
+    background-color: rgb(236, 235, 235);
+    border-radius: 20px;
+    padding:15px;
+    height: auto;
+    column-gap: 20px;
+
+    
+}
+#right-item1{
+    grid-area: right-item1;
+
+    img {
+        height: 7rem;
+        border-radius: 10px;
+    }
+}
+#right-item2{
+    grid-area: right-item2;
+}
+#right-item3{
+    grid-area: right-item3;
+
+    img {
+        height: 7rem;
+        border-radius: 10px;
+    }
+}
+#right-item4{
+    grid-area: right-item4;
+}
+#right-item5{
+    grid-area: right-item5;
+    height: auto;
+    padding-top: 10px;
+    .right {
+        text-align: right;
+    }
+    .left {
+        float: left;
+    }
+    p {
+        margin: 3px 0px;
+    }
+}
+
+.quantity {
+    width: fit-content;
+    padding: 3px 6px;
+    border: 1px rgba(167, 164, 164, 0.774) solid;
+    border-radius: 3px;
+    margin-top: 40px;
+    button, p {
+        display: inline;
+        border: none;
+        
+    }
+    button {
+        background-color: rgba(199, 199, 199, 0.596);
+        width: 20px;
+        height: 20px;
+    }
+    p {
+        padding: 0px 10px;
+    }
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: small;
+}
+
+.new-price {
+    color: orange;
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        grid-template-areas: "item2" "item1";
+    }
+}
+
