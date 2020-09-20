@@ -86,7 +86,7 @@ form {
 
 
 #post-code {
-    width: 170px;
+    width: 190px;
     
 }
 
@@ -158,6 +158,15 @@ form {
     }
     p {
         padding: 0px 10px;
+    }
+    input {
+        background-color:  rgb(236, 235, 235);
+        border: none;
+        height:30px;
+        text-align: center; 
+        padding-left: 20px; 
+        font-size: larger; 
+        width: 50px;
     }
 }
 

@@ -90,7 +90,7 @@ form button {
 }
 
 #post-code {
-  width: 170px;
+  width: 190px;
 }
 
 #item2 {
@@ -183,6 +183,16 @@ form button {
 
 .quantity p {
   padding: 0px 10px;
+}
+
+.quantity input {
+  background-color: #ecebeb;
+  border: none;
+  height: 30px;
+  text-align: center;
+  padding-left: 20px;
+  font-size: larger;
+  width: 50px;
 }
 
 .old-price {

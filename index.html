@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Out Page</title>
-    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
-    <script async="" src="https://negbar.ad-blocker.org/chrome/adblocker-chromeglobalinjectjs.js"></script>
-    
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>    
+    <script src="index.js"></script>
     <link rel="stylesheet" href="sass/index.css">
 </head>
 <body>
@@ -102,13 +101,13 @@
             </div>
             <div class="right-items" id="right-item2">
                 <h3>Vintage Backbag</h3>
-                <p><span class="new-price">$54.99 </span><span class="old-price">$94.99</span></p>
+                <p><span class="new-price">$</span><i id="backbag-new" class="new-price">54.99 </i><span class="old-price">$94.99</span></p>
                 <div class="quantity">
-                    <button>
+                    <button onclick="downFunc('backbag-quantity');">
                         <i class="fas fa-minus"></i>
                     </button>
-                    <p>1</p>
-                    <button>
+                    <input readonly type="number" id="backbag-quantity" value="1" min="1">
+                    <button onclick="upFunc('backbag-quantity');">
                         <i class="fas fa-plus"></i>
                     </button>
                 </div>
@@ -118,13 +117,13 @@
             </div>
             <div class="right-items" id="right-item4">
                 <h3>Levi Shoes</h3>
-                <p><span class="new-price">$74.99 </span><span class="old-price">$124.99</span></p>
+                <p><span class="new-price">$</span><i id="shoes-new" class="new-price">74.99 </i><span class="old-price">$124.99</span></p>
                 <div class="quantity">
-                    <button>
+                    <button onclick="downFunc('shoes-quantity');">
                         <i class="fas fa-minus"></i>
                     </button>
-                    <p>1</p>
-                    <button>
+                    <input readonly type="number" id="shoes-quantity" value="1" min="1">
+                    <button onclick="upFunc('shoes-quantity');">
                         <i class="fas fa-plus"></i>
                     </button>
                 </div>
@@ -132,12 +131,19 @@
             <div class="right-items" id="right-item5">
                 <hr>
                 <p class="left">Shipping</p>
-                <p class="right">$19</p>
+                <div class="right">
+                    <span>$</span><i id="shipping-price">19</i>
+                </div>
                 <hr>
                 <p class="left">Total</p>
-                <p class="right">148.98</p>
+                <div class="right">
+                    <span>$</span><i id="total">148.98</i>
+                </div>
+                
             </div>
         </div>
     </main>
+  
 </body>
+
 </html>
